@@ -2,7 +2,10 @@ const hov = document.getElementById("changeColor");
 const button = document.getElementById("countUp");
 const count = document.getElementById("count");
 const button = document.getElementById("countDown");
-var number =1;
+const entry1=document.getElementById("entry1");
+const result1=document.getElementById("result1");
+const entry2=document.getElementById("entry2");
+const result2=document.getElementById("result2");
 hov.addEventListener("mouseenter", 
     function()
     {hov.style.color = "white";
@@ -33,3 +36,7 @@ button.addEventListener("click",
         count.innerHTML=number;
     }
 );
+entry.addEventListener("input")
+    {
+        result.innerHTML=this.value*10;
+    }
